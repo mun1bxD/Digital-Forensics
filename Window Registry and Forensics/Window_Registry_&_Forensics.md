@@ -9,6 +9,7 @@ The Windows Registry is a hierarchical database used by the Microsoft Windows op
 3. User Account Control (UAC) prompt: If prompted by User Account Control, click "Yes" to allow the Registry Editor to make changes to your system. You may need administrator privileges to proceed.
 4. Registry Editor: Once you've confirmed the UAC prompt, the Registry Editor window will open. Here, you'll see a hierarchical view of the registry keys on the left side and their corresponding values on the right side.
 
+<img src="../images/Screenshot1.png" alt="third" width="500">
 
 In Registry Editor, the hives are the set of registry keys that appear as folders on the left-hand side of the screen when all other keys have been minimized.
 
@@ -126,6 +127,7 @@ Certainly! Here are some examples of the types of information you might find in 
 
 Below is the key and sub key of HKEY_CURRENT_CONFIG
 
+<img src="../images/Screenshot3.png" alt="third" width="500">
 
 **Values:** Values are data entries within keys that store configuration information. Each value has a name (often referred to as the value name or entry name) and a corresponding data value.
 
@@ -146,6 +148,7 @@ To view a security Descriptor
 
 Right click on key or sub key ->permission
 
+<img src="../images/Screenshot4.png" alt="third" width="500">
 
 **Different operations on window registry**
 
@@ -157,6 +160,7 @@ Add a New Key or Subkey:
 - From the context menu, select "New", and then choose either "Key" or "String Value" (depending on whether you want to add a key or a value).
 - Enter a name for the new key or subkey and press Enter to create it.
 
+<img src="../images/Screenshot5.png" alt="third" width="500">
 
 **Deleting:** You can delete keys, subkeys, and values from registry hives. This is useful for removing outdated or unused configurations, uninstalling software, or resetting settings to default values.
 
@@ -164,7 +168,7 @@ To delete a key or sub key right click on the folder and select delete.
 
 A pop message will appear just click ye to delete it
 
-
+<img src="../images/Screenshot6.png" alt="third" width="500">
 
 **Window Registry forensics**
 
@@ -237,6 +241,7 @@ HKLM\\SYSTEM\\CurrentControlSet\\Enum\\USB
 - Manufacturer information 
 - Connection status (currently connected or previously connected)
 
+<img src="../images/Screenshot7.png" alt="third" width="500">
 
 This string is id of the usb device if & is in second last it mean it globally unique serial number if the serial number at second location it mean the usb manufacturer doenot follow microsoft guideline.in this case window generate unique serial number which is unque on window but not globally unique
 
@@ -254,6 +259,7 @@ HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR\Ven_Prod_Version\USB iSerial #\Proper
 
  • 0067 = Last Removal (Win8+ only)
 
+<img src="../images/Screenshot8.png" alt="third" width="500">
 
 
 **HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\AppCompatCache**
@@ -264,6 +270,7 @@ o Windows 10/11 removed the “InsertFlag”, sometimes incorrectly referred to 
 
 • Stores the full file path and name and last modified (M) timestamp
 
+<img src="../images/Screenshot9.png" alt="third" width="500">
 
 
 **HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters**
@@ -296,8 +303,12 @@ Superfetch:
 
 • The processed result is stored in Layout.ini in the Prefetch directory, and is subsequently passed to the Disk Defragmenter, instructing it to re-order those files into sequential positions on the physical hard drive
 
+<img src="../images/Screenshot10.png" alt="third" width="500">
+
 
 **HKLM\\SYSTEM\\CurrentControlSet\\Control\\TimeZoneInformation**
+
+<img src="../images/Screenshot11.png" alt="third" width="500">
 
 
 TimeZoneKeyName:This is a string value that specifies the current time zone your system is configured to use.
@@ -319,12 +330,16 @@ Other Values:
 
 **HKLM\\SYSTEM\\CurrentControlSet\\Control\\ComputerName\\ComputerName**
 
+<img src="../images/Screenshot12.png" alt="third" width="500">
+
 
 **HKLM\\SYSTEM\\CurrentControlSet\\services\\LanmanServer\\Shares**
 
 • Stores all Network Shares
 
 This key stores information about all the file and folder shares currently configured on your computer. Each subkey within this key represents an individual share, and its values define various aspects of the share
+
+<img src="../images/Screenshot13.png" alt="third" width="500">
 
 
 **HKLM\\SYSTEM\\CurrentControlSet\\services\\Tcpip\\Parameters\\Interfaces**
@@ -346,6 +361,8 @@ This key is a container for subkeys, each representing a specific network interf
 - DNS Server(s): The addresses of servers responsible for translating domain names into IP addresses.
 
 - Other settings: Additional configurations like WINS servers, DHCP settings, and more.
+
+<img src="../images/Screenshot14.png" alt="third" width="500">
 
 
 **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\NetworkList**
